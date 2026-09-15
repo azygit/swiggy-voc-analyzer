@@ -323,6 +323,37 @@ def write_report(table, scored, overall, disagreements, theme_names):
     OUTPUT_PATH.write_text("\n".join(lines), encoding="utf-8")
 
 
+def write_summary_csv(table, overall, disagreements):
+    """
+    One row of headline numbers, saved where the dashboard can read it.
+
+    The dashboard shows the accuracy score in its footer. Writing it here
+    means re-running the evaluation updates the dashboard automatically,
+    instead of leaving a stale number typed into the app by hand.
+    """
+    _, _, sentiment_pct = simple_accuracy(table, "sentiment")
+    _, _, business_pct = simple_accuracy(table, "business_line")
+    _, _, severity_pct = simple_accuracy(table, "severity")
+
+    summary = pd.DataFrame([{
+        "reviews_compared": len(table),
+        "sentiment_agreement_percent": round(sentiment_pct, 1),
+        "business_line_agreement_percent": round(business_pct, 1),
+        "severity_agreement_percent": round(severity_pct, 1),
+        "theme_f1_micro": round(overall["micro_f1"], 3),
+        "theme_f1_macro": round(overall["macro_f1"], 3),
+        "reviews_with_disagreement": len(disagreements),
+        "reference_model": REFERENCE_MODEL,
+        "reference_note": SPOT_CHECK_NOTE,
+        "evaluated_on": str(date.today()),
+    }])
+
+    path = Path("data/outputs/evaluation_summary.csv")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    summary.to_csv(path, index=False, encoding="utf-8-sig")
+    return path
+
+
 def main():
     table = load_both_sets()
     theme_names = read_theme_names()
@@ -332,6 +363,7 @@ def main():
     disagreements = find_disagreements(table)
 
     write_report(table, scored, overall, disagreements, theme_names)
+    summary_path = write_summary_csv(table, overall, disagreements)
 
     total = len(table)
     _, _, sent_pct = simple_accuracy(table, "sentiment")
@@ -346,6 +378,7 @@ def main():
     print(f"Theme F1 (macro)         {overall['macro_f1']:>6.3f}")
     print(f"\nReviews with any disagreement: {len(disagreements)} of {total}")
     print(f"\nFull write-up saved to {OUTPUT_PATH}")
+    print(f"Summary for the dashboard saved to {summary_path}")
     print(f"\nNote: reference labels were produced by {REFERENCE_MODEL},")
     print(f"{SPOT_CHECK_NOTE}. This measures model-to-model agreement,")
     print("not accuracy against human ground truth.")

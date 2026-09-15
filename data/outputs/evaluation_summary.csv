@@ -1,0 +1,2 @@
+﻿reviews_compared,sentiment_agreement_percent,business_line_agreement_percent,severity_agreement_percent,theme_f1_micro,theme_f1_macro,reviews_with_disagreement,reference_model,reference_note,evaluated_on
+200,94.5,77.5,74.5,0.833,0.766,112,Claude Opus 5,spot-checked by the project owner on a random sample of 20,2026-09-15
