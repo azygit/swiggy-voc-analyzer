@@ -1,0 +1,18 @@
+# Virtual environment — rebuilt from requirements.txt, never shared
+.venv/
+
+# Secrets — the real API key lives here. Never commit this file.
+.env
+
+# Temporary files Python creates while running
+__pycache__/
+*.pyc
+
+# Raw scraped reviews — bulky and re-downloadable
+data/raw/
+
+# SQLite database — rebuilt by the scripts
+*.db
+
+# macOS folder metadata
+.DS_Store
