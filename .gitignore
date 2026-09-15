@@ -16,3 +16,6 @@ data/raw/
 
 # macOS folder metadata
 .DS_Store
+
+# Log files (may contain review text)
+logs/

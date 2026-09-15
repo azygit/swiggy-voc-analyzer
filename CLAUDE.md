@@ -36,10 +36,10 @@ SQL, and present insights in a Streamlit dashboard.
 ## Current status
 - [x] Step 0: Setup
 - [x] Step 1: Scrape
-- [ ] Step 2: SQLite
-- [ ] Step 3: Clean
-- [ ] Step 4: Taxonomy + manual labels
-- [ ] Step 5: LLM classification
+- [x] Step 2: SQLite
+- [x] Step 3: Clean
+- [x] Step 4: Taxonomy + manual labels
+- [x] Step 5: LLM classification
 - [ ] Step 6: Evaluation
 - [ ] Step 7: SQL analysis + impact score
 - [ ] Step 8: Dashboard + deploy
