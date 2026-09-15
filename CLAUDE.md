@@ -40,8 +40,8 @@ SQL, and present insights in a Streamlit dashboard.
 - [x] Step 3: Clean
 - [x] Step 4: Taxonomy + manual labels
 - [x] Step 5: LLM classification
-- [ ] Step 6: Evaluation
-- [ ] Step 7: SQL analysis + impact score
+- [x] Step 6: Evaluation
+- [x] Step 7: SQL analysis + impact score
 - [ ] Step 8: Dashboard + deploy
 - [ ] Step 9: Insights memo
 - [ ] Step 10: README + packaging

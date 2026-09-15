@@ -1,0 +1,41 @@
+﻿business_line,theme,reviews,reviews_in_line,share_of_line_percent
+Dineout,Refunds and cancellation,3,9,33.3
+Dineout,Misleading offers and pricing,3,9,33.3
+Dineout,Other,2,9,22.2
+Dineout,Customer support,1,9,11.1
+Food,Missing or undelivered order,249,1274,19.5
+Food,Delivery timing,249,1274,19.5
+Food,Food quality and packaging,223,1274,17.5
+Food,Positive experience,213,1274,16.7
+Food,Customer support,138,1274,10.8
+Food,Refunds and cancellation,132,1274,10.4
+Food,Pricing and extra charges,82,1274,6.4
+Food,Delivery partner conduct,59,1274,4.6
+Food,Misleading offers and pricing,28,1274,2.2
+Food,Other,14,1274,1.1
+Food,Location and address,12,1274,0.9
+Food,App experience and bugs,12,1274,0.9
+General,Positive experience,833,3735,22.3
+General,Customer support,566,3735,15.2
+General,Delivery timing,477,3735,12.8
+General,Other,441,3735,11.8
+General,Refunds and cancellation,390,3735,10.4
+General,Pricing and extra charges,320,3735,8.6
+General,App experience and bugs,270,3735,7.2
+General,Missing or undelivered order,238,3735,6.4
+General,Misleading offers and pricing,178,3735,4.8
+General,Delivery partner conduct,121,3735,3.2
+General,Location and address,46,3735,1.2
+General,Food quality and packaging,42,3735,1.1
+Instamart,Food quality and packaging,64,269,23.8
+Instamart,Missing or undelivered order,61,269,22.7
+Instamart,Customer support,42,269,15.6
+Instamart,Positive experience,35,269,13.0
+Instamart,Refunds and cancellation,32,269,11.9
+Instamart,Pricing and extra charges,14,269,5.2
+Instamart,App experience and bugs,13,269,4.8
+Instamart,Misleading offers and pricing,12,269,4.5
+Instamart,Other,10,269,3.7
+Instamart,Delivery timing,10,269,3.7
+Instamart,Delivery partner conduct,9,269,3.3
+Instamart,Location and address,2,269,0.7
