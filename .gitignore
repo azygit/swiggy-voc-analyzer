@@ -1,5 +1,6 @@
 # Virtual environment — rebuilt from requirements.txt, never shared
-.venv/
+.venv
+.venv.nosync/
 
 # Secrets — the real API key lives here. Never commit this file.
 .env

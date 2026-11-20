@@ -1,0 +1,11 @@
+# Base look for the dashboard. The app can switch to a light palette at
+# runtime, but these values decide how Streamlit's own widgets are drawn.
+[theme]
+base = "dark"
+primaryColor = "#9085e9"
+backgroundColor = "#14151c"
+secondaryBackgroundColor = "#1c1d26"
+textColor = "#eceaf3"
+
+[client]
+toolbarMode = "minimal"
