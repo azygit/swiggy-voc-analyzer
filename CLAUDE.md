@@ -43,5 +43,5 @@ SQL, and present insights in a Streamlit dashboard.
 - [x] Step 6: Evaluation
 - [x] Step 7: SQL analysis + impact score
 - [x] Step 8: Dashboard + deploy
-- [ ] Step 9: Insights memo
-- [ ] Step 10: README + packaging
+- [x] Step 9: Insights memo
+- [x] Step 10: README + packaging
