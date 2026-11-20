@@ -1,0 +1,23 @@
+﻿figure,value,note
+support_reviews,747,Reviews tagged Customer support
+support_only_reviews,563,Customer support is their only theme
+support_only_percent,75.4,Share of support reviews with no other theme
+support_with_other_theme,184,Support reviews that also carry another theme
+support_paired_with: Missing or undelivered order,70,Support reviews that also carry this theme
+support_paired_with: Delivery timing,51,Support reviews that also carry this theme
+support_paired_with: Food quality and packaging,32,Support reviews that also carry this theme
+missing_or_refund_reviews,1082,"Reviews with either theme, each counted once"
+missing_and_refund_overlap,23,Reviews carrying both themes
+chatbot_mentions,124,Review text matches: \b(?:chat ?bot|bot|ai assistant|automated (?:chat|reply|replies))\b
+chatbot_mentions_percent_of_all,2.3,Share of all classified reviews
+chatbot_negative_percent,99.2,Share of chatbot mentions classified negative
+cancellation_fee_mentions,127,Review text matches: cancell?ation (?:fee|charge)|charged? (?:me |us )?(?:for |a )?cancel
+uninstall_mentions,108,Review text contains 'uninstall'
+cancellation_fee_and_uninstall,5,Reviews mentioning both
+uninstall_paired_with: Customer support,30,Uninstall reviews that carry this theme
+uninstall_paired_with: Missing or undelivered order,18,Uninstall reviews that carry this theme
+uninstall_paired_with: Refunds and cancellation,16,Uninstall reviews that carry this theme
+discarded_reviews,9713,Reviews after cleaning (src/clean.py)
+discarded_avg_rating,4.38,Average star rating
+kept_reviews,5287,Reviews after cleaning (src/clean.py)
+kept_avg_rating,2.09,Average star rating

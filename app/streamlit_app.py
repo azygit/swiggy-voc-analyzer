@@ -503,7 +503,7 @@ def footer(theme):
         if evaluation is not None:
             st.caption(
                 "**Method.** Play Store reviews were scraped, cleaned to drop "
-                "one-word and duplicate entries, then classified by Claude "
+                "very short, generic and duplicate entries, then classified by Claude "
                 "Haiku 4.5 into the themes in `docs/taxonomy.md`."
             )
             st.caption(
