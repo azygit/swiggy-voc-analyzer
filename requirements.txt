@@ -1,11 +1,12 @@
 # Install everything here with:  python3 -m pip install -r requirements.txt
 # (activate the virtualenv first — your prompt should show "(.venv)")
+# Versions are pinned so the hosted dashboard runs exactly what was tested here.
 
-google-play-scraper   # downloads Swiggy's Play Store reviews
-pandas                # works with data as tables, like a spreadsheet in code
-anthropic             # calls Claude to sort reviews into themes
-python-dotenv         # reads the API key from .env so it never appears in code
-streamlit             # turns a Python script into a web dashboard
-plotly                # draws the interactive charts
+google-play-scraper==1.2.7   # downloads Swiggy's Play Store reviews
+pandas==3.0.5                # works with data as tables, like a spreadsheet in code
+anthropic==1.5.0             # calls Claude to sort reviews into themes
+python-dotenv==1.2.3         # reads the API key from .env so it never appears in code
+streamlit==1.63.0            # turns a Python script into a web dashboard
+plotly==7.0.0                # draws the interactive charts
 
 # Note: sqlite3 is not listed because it ships inside Python already.
